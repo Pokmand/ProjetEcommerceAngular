@@ -1,1 +1,9 @@
-
+.containerFooter  {
+  background-color: #bcaaa4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.containerBackFooter {
+  background-color: #bcaaa4;
+  padding-top: -top: 2rem;
+}
