@@ -38,11 +38,21 @@ sibellule
       var itemFound = $rootScope.cart.find(x => x.id === itemToCart.id);
 
       if (itemFound) {
-        itemFound.qty++;
+        var indexItem = $rootScope.cart.indexOf(itemFound);
+        $rootScope.cart[indexItem].qty++;
       } else {
-        $rootScope.cart.push(itemToCart);
+        $rootScope.cart.push(angular.copy(itemToCart));
         $rootScope.clearBtn = true;
       }
+    };
+
+    $scope.totalCart = function() {
+      var total = 0;
+      angular.forEach($rootScope.cart, function(value, key) {
+        total += value.qty * value.price;
+      })
+
+      return total;
     };
 
     $scope.removeFromCart = function(removeItemFromCart) {
@@ -60,5 +70,5 @@ sibellule
     $scope.idProduct = $routeParams.idProduct;
   }])
   .controller('byCategory', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
-$scope.productCategory = $routeParams.category;
-}]);
+    $scope.productCategory = $routeParams.category;
+  }]);

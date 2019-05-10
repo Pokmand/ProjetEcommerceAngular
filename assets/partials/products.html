@@ -1,6 +1,7 @@
 <div class="container" ng-controller="allCategories">
   <div class="row">
     <div class="card-group col-12 col-md-4" ng-repeat="item in products">
+      <a href="#!/showProduct/{{item.id}}">
       <div class="card">
         <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" />
         <div class="card-body">
@@ -8,6 +9,7 @@
           <h5 class="card-title">{{item.product}}</h5>
           <p class="card-text">{{item.description | limitTo : 100}}</p>
         </div>
+        </a>
         <div class="card-footer">
           <p class="card-text"><small>{{item.price | currency:"&euro;"}}</small></p>
         </div>
