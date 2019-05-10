@@ -12,7 +12,7 @@ sibellule
         controller: 'description'
       })
       .when('/showCategory/:category', {
-        templateUrl: 'assets/partials/category.html',
+        templateUrl: 'assets/partials/bycategory.html',
         controller: 'byCategory'
       })
       .otherwise({
@@ -57,8 +57,8 @@ sibellule
     }
   }])
   .controller('description', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
-
+    $scope.idProduct = $routeParams.idProduct;
   }])
   .controller('byCategory', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
-
+$scope.productCategory = $routeParams.category;
   }]);

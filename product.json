@@ -1,10 +1,10 @@
 [
   {
     "id": 0,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref001",
-    "product": "Cloche de décoration",
-    "description": "Cette cloche de couleur Or agrémentera parfaitement votre décoration sur le thème de Pâques ou dans le cadre d’une décoration en hommage à la cathédrale de Notre-Dame…",
+    "product": "Cloche de Decoration",
+    "description": "Cette cloche de couleur Or agrémentera parfaitement votre Decoration sur le thème de Pâques ou dans le cadre d’une Decoration en hommage à la cathédrale de Notre-Dame…",
     "link": "assets/img/produitdeco1.jpg",
     "price": 12.30,
     "qty": 1,
@@ -12,17 +12,17 @@
   },
   {
     "id": 1,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref002",
     "product": "Oeuf métallique",
-    "description": "Cet œuf metallique décorera parfaitement votre table pour le déjeuner de Pâques. De plus, il ravira les grands et les petits avec son design enfantin…",
+    "description": "Cet œuf metallique Decorera parfaitement votre table pour le déjeuner de Pâques. De plus, il ravira les grands et les petits avec son design enfantin…",
     "link": "assets/img/produitdeco2.jpg",
     "price": 8.90,
     "qty": 1
   },
   {
     "id": 2,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref003",
     "product": "Lustre ampoule",
     "description": "Ce lustre design combine la pureté du design et l’impression de volume...",
@@ -32,17 +32,17 @@
   },
   {
     "id": 3,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref004",
     "product": "Boite noire",
-    "description": "Boite pour décorer votre intérieur, ranger vos clés ou classer toutes sortes d’objets de petites tailles…",
+    "description": "Boite pour Decorer votre intérieur, ranger vos clés ou classer toutes sortes d’objets de petites tailles…",
     "link": "assets/img/produitdeco4.jpg",
     "price": 15.20,
     "qty": 1
   },
   {
     "id": 4,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref005",
     "product": "Cage métallique",
     "description": "Vous adopterez rapidement cette cage et ses oiseaux qui, en plus d’être très silencieux, ne sont pas difficiles à entretenir…",
@@ -52,30 +52,30 @@
   },
   {
     "id": 5,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref006",
     "product": "Boules peluches",
-    "description": "Ces boules peluches de couleurs vives agrémenteront votre décoration d’une touche joyeuse et moderne…",
+    "description": "Ces boules peluches de couleurs vives agrémenteront votre Decoration d’une touche joyeuse et moderne…",
     "link": "assets/img/produitdeco6.jpg",
     "price": 4.80,
     "qty": 1
   },
   {
     "id": 6,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref007",
     "product": "Bougie parfumée",
-    "description": "Pour compléter votre décoration, rien de tel qu’une touche odorante qui viendra parfaire un sentiment de bien-être et de sérénité…",
+    "description": "Pour compléter votre Decoration, rien de tel qu’une touche odorante qui viendra parfaire un sentiment de bien-être et de sérénité…",
     "link": "assets/img/produitdeco7.jpg",
     "price": 15.95,
     "qty": 1
   },
   {
     "id": 7,
-    "category": "Déco",
+    "category": "Deco",
     "ref": "ref008",
     "product": "Cadre Panda",
-    "description": "Ce cadre d’inspiration art moderne permettra d’apporter une petite touche décalée à votre décoration intérieure...",
+    "description": "Ce cadre d’inspiration art moderne permettra d’apporter une petite touche décalée à votre Decoration intérieure...",
     "link": "assets/img/produitdeco8.jpg",
     "price": 24.90,
     "qty": 1
@@ -185,7 +185,7 @@
     "category": "Accessoires",
     "ref": "ref023",
     "product": "Sac de voyage",
-    "description": "Partir en vacances, ….Oui bien sur mais comment garder un style inimitable et décontracté ...vous n’avez plus qu’à l’acheter...",
+    "description": "Partir en vacances, ….Oui bien sur mais comment garder un style inimitable et Decontracté ...vous n’avez plus qu’à l’acheter...",
     "link": "assets/img/produitaccessoire3.jpg",
     "price": 134.90,
     "qty": 1
@@ -225,7 +225,7 @@
     "category": "Accessoires",
     "ref": "ref027",
     "product": "Porte-Monnaies",
-    "description": "La monnaie, oui, c’est encore utile...retrouvez alors l’incontournable porte-monnaie déco…",
+    "description": "La monnaie, oui, c’est encore utile...retrouvez alors l’incontournable porte-monnaie Deco…",
     "link": "assets/img/produitaccessoire7.jpg",
     "price": 30.00,
     "qty": 1
