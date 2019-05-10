@@ -33,12 +33,22 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Cart</h5>
+          <span class="pl-2" ng-show="clearBtn"> <button type="button" class="btn btn-danger" ng-click="clearTheCart()"> <i class="fas fa-eraser"></i> </button> Effacer le panier</span>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <div class="container" ng-hide="clearBtn">
+            <div class="row">
+              <div class="col-4 text-right">
+                <i class="far fa-sad-cry fa-7x"></i>
+              </div>
+              <div class="col-8 align-self-center">
+                <span class="h1">Votre panier est vide</span>
+              </div>
+            </div>
+          </div>
           <div class="card mb-3" style="max-width: 768px;" ng-repeat="items in cart">
             <div class="row no-gutters">
               <div class="col-12 col-md-2">
@@ -53,7 +63,8 @@
                         <small class="text-muted">{{items.ref}}</small>
                       </div>
                       <div class="col-12 col-md-3">
-                        <p>Qté : <i class="fas fa-minus-circle" ng-click="items.qty = items.qty - 1; items.qty ? '' : removeFromCart(items)"></i><span class="pl-3 pr-3">{{items.qty}}</span><i class="fas fa-plus-circle" ng-click="items.qty = items.qty + 1"></i></p>
+                        <p>Qté : <i class="fas fa-minus-circle" ng-click="items.qty = items.qty - 1; items.qty ? '' : removeFromCart(items)"></i><span class="pl-3 pr-3">{{items.qty}}</span><i class="fas fa-plus-circle"
+                            ng-click="items.qty = items.qty + 1"></i></p>
                       </div>
                       <div class="col-12 col-md-3">
                         {{items.price * items.qty | currency:"&euro;"}}
@@ -68,8 +79,10 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-footer" ng-show="clearBtn">
+          <span class="pr-2">TOTAL : {{totalCart() | currency:"&euro;"}}</span>
+          <span>Valider votre panier</span>
+          <button type="button" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
         </div>
       </div>
     </div>
