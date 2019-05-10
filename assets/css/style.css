@@ -4,6 +4,10 @@
   padding-bottom: 2rem;
 }
 .containerBackFooter {
-  background-color: #bcaaa4;
-  padding-top: -top: 2rem;
+  background-color: #5b4b45;
+}
+
+#imgLogofooter {
+  width:4rem;
+  height :4rem;
 }
