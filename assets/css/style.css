@@ -1,3 +1,57 @@
+@media (min-width: 768px) {
+  .card-img {
+    object-fit: cover;
+    height: 150px;
+    width: 100px;
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btnFloating {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background: #26a69a;
+  z-index: 1;
+  left: 75%;
+  top: -45px;
+}
+
+.btnRounded {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  border: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background: #26a69a;
+}
+
+.btnRounded:hover {
+  background: #777555;
+  box-shadow: 0 0 3px gray;
+}
+
+.btnFloating:hover {
+  background: #777555;
+  box-shadow: 0 0 3px gray;
+}
+
 .imgCollage {
   border: 0.2rem solid white;
 }
@@ -75,3 +129,56 @@
 .videoFb {
   padding-top: 2rem;
 }
+
+.containerFooter {
+  background-color: #bcaaa4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.containerBackFooter {
+  background-color: #5b4b45;
+}
+
+#footerLogo {
+  width: 4rem;
+  height: 4rem;
+}
+
+=======
+@media (max-width: 570px) {
+  div img.card-img {
+    object-fit: cover;
+    height: 150px;
+  }
+
+  button.btnFloating {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    background: #26a69a;
+    z-index: 1;
+    left: 85%;
+    top: -45px;
+  }
+  .containerFooter {
+    background-color: #bcaaa4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .containerBackFooter {
+    background-color: #5b4b45;
+  }
+
+  #footerLogo {
+    width: 4rem;
+    height: 4rem;
+  }
