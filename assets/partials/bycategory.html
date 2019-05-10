@@ -3,13 +3,12 @@
     <div class="card-group col-12 col-md-4" ng-repeat="item in products | filter:productCategory">
     <a href="#!/showProduct/{{item.id}}">
       <div class="card">
-        <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" />
+        <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" /></a>
         <div class="card-body">
           <button type="button" class="btnFloating" ng-click="addToCart(item)"><i class="fas fa-shopping-basket"></i></button>
-          <h5 class="card-title">{{item.product}}</h5>
-          <p class="card-text">{{item.description | limitTo : 100}}</p>
+          <a href="#!/showProduct/{{item.id}}"><h5 class="card-title">{{item.product}}</h5>
+          <p class="card-text">{{item.description | limitTo : 100}}</p></a>
         </div>
-        </a>
         <div class="card-footer">
           <p class="card-text"><small>{{item.price | currency:"&euro;"}}</small></p>
         </div>
