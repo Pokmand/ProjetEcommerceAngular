@@ -1,0 +1,77 @@
+.imgCollage {
+  border: 0.2rem solid white;
+}
+
+#imgLogo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar {
+  height: 4rem;
+  background-color: #bcaaa4;
+}
+
+.nav-link {
+  color: #6c5347;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  font-size: 1.5rem;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.voirTout {
+  font-size: 1.5rem;
+  color: #f7e6f0;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.nav-link:hover {
+  color: #4a382f;
+}
+
+#navbarTogglerDemo01 {
+  background-color: #bcaaa4;
+  height: auto;
+}
+
+.basketShop {
+  color: #f7e6f0;
+}
+
+#img {
+  padding-left: auto;
+}
+
+.brown1 {
+  background-color: brown;
+}
+
+.brown2 {
+  padding-top: 2rem;
+  height: 50rem;
+}
+
+.sticky-nav {
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+.reseauxSoc {
+  background-color: #f7e6f0;
+  height: 7rem;
+  border-top: 0.2rem solid white;
+}
+
+.rowInstat {
+  padding-top: 2rem;
+}
+
+.videoFb {
+  padding-top: 2rem;
+}
