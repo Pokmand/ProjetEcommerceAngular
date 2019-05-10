@@ -1,13 +1,14 @@
-.containerFooter  {
+.containerFooter {
   background-color: #bcaaa4;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .containerBackFooter {
   background-color: #5b4b45;
 }
 
 #imgLogofooter {
-  width:4rem;
-  height :4rem;
+  width: 4rem;
+  height: 4rem;
 }
