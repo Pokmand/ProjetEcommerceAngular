@@ -26,6 +26,7 @@
 </head>
 
 <body>
+  <!--Header collage des 4 images et logo en z-index-->
   <div class="container-fluid">
     <div class="row rowHead text-center">
       <div class="padLogo"><img src="assets/img/logo.jpg" alt="" class="img-fluid logoTop"></div>
@@ -43,7 +44,7 @@
       </div>
     </div>
   </div>
-
+  <!--Début de la Navbar sticky-top-->
   <nav class="navbar sticky-top navbar-expand-lg" ng-controller="scrollController" id="scrollTop">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -75,15 +76,19 @@
       </div>
     </div>
   </nav>
-  <!-- Page Layout here -->
+  <!--Fin de la Navbar-->
+
+  <!--Affichage des product dans le container gauche sous Navbar-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-9 col-md-8">
         <div ng-view>
         </div>
       </div>
-      <!--Barre fixe à droite pour présenter les articles des réseaux sociaux -->
+      <!--Fin container gauche sous Navbar-->
+      <!--Affichage des articles réseaux sociaux  container droit sous Navbar-->
       <div class="col-lg-3 col-md-4 col-sm-12 brown2">
+        <!--Carouselle actualités du magasin-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <div class="card-header titleCardRes text-center">
             <span>Nos dernières actualités !</span>
@@ -116,18 +121,20 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-
           </div>
         </div>
+        <!--Fin carouselle actualités du magasin-->
+
+        <!--iframe page Facebook-->
         <div class="facebookPage">
           <p class="text-center titleRes">Suivez-nous sur nos réseaux ! <br>
             Vous y serez informé de nos dernières actualités</p>
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffr-fr.facebook.com%2Fsibellule.fecamp&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
             width="290" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
+        <!--Fin iframe page Facebook-->
 
-
-        <!--Carouselle instagram -->
+        <!--Carouselle photos instagram sticky-top-->
         <div class="instaBlock slide sticky-top">
           <div id="carouselExampleIndicators2" class="carousel" data-ride="carousel">
             <div class="card-header titleCardRes text-center">
@@ -138,7 +145,6 @@
                 <img class="d-block w-100" src="assets/img/insta1.jpg" alt="First slide">
                 <div class="card-body reseauxSoc text-center">
                   <p>L'été est bientôt là avec toutes ses couleurs vives ...<br> Venez vite en faire profiter votre intérieur !</p>
-
                 </div>
               </div>
               <div class="carousel-item">
@@ -164,10 +170,12 @@
             </div>
           </div>
         </div>
+        <!--Fin carouselle instagram-->
       </div>
+      <!--Fin container droit sous Navbar-->
     </div>
   </div>
-  </div>
+  <!--Fin container-fluid produit et reseaux sociaux-->
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" ng-controller="allCategories">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -331,7 +339,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="myForm" action="index.html" method="post" novalidate="true">
+          <form class="myForm" action="index.html" method="post" >
             <ul>
               <li><label for="email">Votre Email : </label>
                 <input type="email" name="email" placeholder="olivierdupont@gmail.com" id="email" ng-model="email" required />
