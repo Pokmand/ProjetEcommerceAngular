@@ -389,3 +389,22 @@ button.btnFloating {
   width: 4rem;
   height: 4rem;
 }
+
+button.buttonShop {
+  width: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.badge:after {
+  content: attr(data-count);
+  position: absolute;
+  background: #f7e6f0;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .9rem;
+  border-radius: 50%;
+}

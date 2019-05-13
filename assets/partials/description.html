@@ -9,11 +9,23 @@
       <h5 class="card-title titleCardDesc">{{products[idProduct].product}}</h5>
           <p class="card-text CardDesc">{{products[idProduct].description}}</p>
       </div>
-            <div class="card-footer footerDescrip">
-                  <button type="button" class="btnFloating" ng-click="addToCart(item)"><i class="fas fa-shopping-basket"></i></button>
-                  <span class="CardDescQte">Qté : <i class="fas fa-minus-circle" ng-click="items.qty = items.qty - 1; items.qty ? '' : removeFromCart(items)"></i><span class="pl-3 pr-3">{{items.qty}}</span><i class="fas fa-plus-circle"
-                            ng-click="items.qty = items.qty + 1"></i></span>
+        <div class="card-footer footerDescrip">
+          <button type="button" class="btnFloating" ng-click="addToCart(products[idProduct])"><i class="fas fa-shopping-basket"></i></button>
+          <span>Qté : <i class="fas fa-minus-circle" ng-click="(qty > 1) ? qty = qty - 1 : ''"></i><span class="pl-3 pr-3">{{qty}}</span><i class="fas fa-plus-circle" ng-click="qty = qty + 1"></i></span>
+
+          <span class="card-text footerDescrip"><small>{{products[idProduct].price | currency:"&euro;"}}</small></span>
+  <!-- <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4 descripImg">
+        <img class="img-fluid card-img-top descripImg" ng-src="{{products[idProduct].link}}" alt="" />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body cardBodyDescrip">
+          <h5 class="card-title">{{products[idProduct].product}}</h5>
+          <p class="card-text">{{products[idProduct].description}}</p>
+
+>>>>>>> Yoan -->
         </div>
+      </div>
     </div>
   </div>
-</div>

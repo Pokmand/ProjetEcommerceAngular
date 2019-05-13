@@ -44,20 +44,20 @@
     </div>
   </div>
 
-  <nav class="navbar  sticky-top navbar-expand-lg">
+  <nav class="navbar sticky-top navbar-expand-lg" ng-controller="scrollController" id="scrollTop">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo01">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="nav-link mx-5" href="#!/showCategory/Deco">Décoration</a>
+          <a class="nav-link mx-5" href="#!/showCategory/Deco" ng-click="goToTop()">Décoration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-5" href="#!/showCategory/Bijoux">Bijoux</a>
+          <a class="nav-link mx-5" href="#!/showCategory/Bijoux" ng-click="goToTop()">Bijoux</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-5" href="#!/showCategory/Accessoires">Accessoires</a>
+          <a class="nav-link mx-5" href="#!/showCategory/Accessoires" ng-click="goToTop()">Accessoires</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link voirTout" href="#">Voir tout</a>
@@ -69,10 +69,9 @@
         <a class="" data-toggle="modal" data-target="#exampleModalCenter" ng-disabled="myForm.$invalid">
           Se Connecter / S'inscrire
         </a></div>
-      <div class="basketShop">
-        <button type="button" class="buttonShop" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-shopping-basket fa-2x"></i></button>
-      </div>
-    </div>
+        <div class="basketShop">
+          <button type="button" class="buttonShop" ng-class="(cart.length) ? 'badge' : ''" data-count="{{cart.length}}" data-toggle="modal" data-target=".bd-example-modal-lg" title="{{(cart.length > 1) ? 'Vous avez ' + cart.length + ' articles dans votre panier' : 'Vous avez ' + cart.length + ' article dans votre panier'}}"><i class="fas fa-shopping-basket fa-2x"></i></button>
+        </div>
     </div>
   </nav>
   <!-- Page Layout here -->
