@@ -11,27 +11,377 @@
     object-fit: cover;
     height: 150px;
   }
-  .logoTop{
+
+  .logoTop {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-
   }
 }
 
+
+
+/*Container header*/
+/*z-index pour que le logo passe devant les 4 photos*/
 .padLogo {
   width: 100%;
   position: absolute;
   z-index: auto;
   align-self: center;
-
 }
 
 .logoTop{
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
+}
 
+.imgCollage, .imgCollage2 {
+  position: relative;
+  z-index: -1;
+  border-bottom: 0.2rem solid white;
+  border-right: 0.2rem solid white;
+}
+
+#imgLogo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+ /*fin header*/
+
+ /*Navbar*/
+.navbar {
+  height: 4rem;
+  background-color: #bcaaa4;
+}
+
+.nav-link {
+  color: #6c5347;
+}
+
+.nav-link:hover {
+  color: #f7e6f0;
+}
+
+.voirTout {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f7e6f0;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.voirTout:hover {
+  color: #6c5347;
+}
+
+#navbarTogglerDemo01 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  background-color: #bcaaa4;
+  height: auto;
+}
+
+.basketShop {
+  margin-left: 2rem;
+}
+
+.buttonShop {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  background-color: #bcaaa4;
+  border: none;
+}
+
+.sticky-nav {
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+/*Fin Navbar*/
+
+
+.titleRes {
+    font-family: 'Montserrat', sans-serif;
+  padding-top: 3rem;
+}
+
+.cardProducts {
+  margin-top: 2rem;
+}
+
+/*Card product*/
+.colorDescription {
+  color: #7e2034;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+}
+
+.colorDescription2 {
+  color: #6c5347;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+}
+
+.colorDescription2:hover {
+  color: #7e2034;
+}
+
+.descriptionProduct1:hover {
+  text-decoration: none;
+}
+
+.footerPrice {
+  background-color: #bcaaa4;
+}
+
+.priceCard {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #7e2034;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.descriptionCard {
+  padding-top: 3rem;
+}
+
+.descripImg {
+  height: 24rem;
+  width: 24rem;
+}
+
+.cardBodyDescrip {
+min-height: 20rem;
+}
+
+.titleCardDesc {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #7e2034;
+}
+
+.CardDesc {
+  padding-top: 1rem;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: #bcaaa4;
+}
+
+.CardDescQte {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+  color: #7e2034;
+}
+
+.qteCard {
+  color: #bcaaa4;
+  font-size: 1rem;
+}
+/*Fin card Products*/
+
+
+/*Colonne réseaux sociaux*/
+.reseauxSocCol {
+  padding-top: 2rem;
+}
+
+.facebookActu {
+  height : 30rem;
+  width: 20rem;
+}
+
+.reseauxSoc {
+  height: 9rem;
+  border-top: 0.2rem solid #bcaaa4;
+  color: #6c5347;
+}
+
+.titleCardRes, .titleCardResInsta {
+  font-size: 1.2rem;
+  color: #7e2034;
+}
+
+.titleCardResInsta:hover {
+  color: #bcaaa4;
+  text-decoration: none;
+}
+
+#carouselExampleIndicators {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  border-radius: 10px;
+  border-top: 0.2rem solid #bcaaa4;
+  border-bottom: 0.2rem solid #bcaaa4;
+  border-left: 0.2rem solid #bcaaa4;
+  border-right: 0.2rem solid #bcaaa4;
+}
+
+.instaBlock {
+  z-index: auto;
+  padding-top: 3.6rem;
+}
+
+#carouselExampleIndicators2 {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  border-radius: 10px;
+  border-top: 0.2rem solid #bcaaa4;
+  border-bottom: 0.2rem solid #bcaaa4;
+  border-left: 0.2rem solid #bcaaa4;
+  border-right: 0.2rem solid #bcaaa4;
+}
+/*Fin Colonne réseaux sociaux
+
+/*Footer*/
+.titleFooter {
+  color: #7e2034;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.containerBackFooter {
+  background-color: #5b4b45;
+}
+
+.faReseaux, .productFooter, .timetable, .address {
+    font-family: 'Montserrat', sans-serif;
+  color: #f7e6f0;
+  font-weight: bold;
+}
+
+.faReseaux:hover, .productFooter:hover {
+  color: #7e2034;
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.modal-body {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.footerDescrip {
+  height: 4rem;
+  color: #f7e6f0;
+  font-weight: bold;
+  background-color: #bcaaa4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.containerFooter {
+  background-color: #bcaaa4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#footerLogo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+/*Fin Footer*/
+
+
+#img {
+  padding-left: auto;
+}
+
+
+/*Panier achat*/
+.basketOk {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #bcaaa4;
+}
+
+.basketEmpty {
+  color: #bcaaa4;
+}
+
+.eraser {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btnEraser {
+  color: #7e2034;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.btnEraser:hover {
+  color: #bcaaa4;
+}
+
+.btnPlane {
+  color: #bcaaa4;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.btnPlane:hover {
+  color: #7e2034;
+}
+/*Fin panier achat*/
+
+.modalInscrip {
+  background-color: #bcaaa4;
+    font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+
+/*Bouton rond*/
+button.btnFloating {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background: #8f2d56;
+  z-index: 1;
+  left: 85%;
+  top: -45px;
+}
+
+
+
+button.buttonShop {
+  width: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.badge:after {
+  content: attr(data-count);
+  position: absolute;
+  background: #f7e6f0;
+  height: 1rem;
+  width: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .9rem;
+  border-radius: 50%;
 }
 
 .card-img-top {
@@ -78,333 +428,4 @@
 .btnFloating:hover {
   background: #bcaaa4;
   box-shadow: 0 0 3px gray;
-}
-
-.imgCollage, .imgCollage2 {
-  position: relative;
-  z-index: -1;
-  border-bottom: 0.2rem solid white;
-  border-right: 0.2rem solid white;
-}
-
-#imgLogo {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-.navbar {
-  height: 4rem;
-  background-color: #bcaaa4;
-}
-
-.nav-link {
-  color: #6c5347;
-}
-
-.nav-link:hover {
-  color: #f7e6f0;
-}
-
-.voirTout {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #f7e6f0;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-}
-
-.voirTout:hover {
-  color: #6c5347;
-}
-
-#navbarTogglerDemo01 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  background-color: #bcaaa4;
-  height: auto;
-}
-
-.basketShop {
-  margin-left: 2rem;
-}
-
-.buttonShop {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  background-color: #bcaaa4;
-  border: none;
-}
-
-.titleRes {
-  padding-top: 3rem;
-}
-
-.cardProducts {
-  margin-top: 2rem;
-}
-
-.colorDescription {
-  color: #7e2034;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
-}
-
-.colorDescription2 {
-  color: #6c5347;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  font-size: 1rem;
-}
-
-.colorDescription2:hover {
-  color: #7e2034;
-}
-
-.descriptionProduct1:hover {
-  text-decoration: none;
-}
-
-.footerPrice {
-  background-color: #bcaaa4;
-}
-
-footer {
-  padding-top: 2rem;
-}
-
-.modal-header {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  background-color: #bcaaa4;
-}
-.modal-body {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-}
-
-.priceCard {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #7e2034;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.basketOk {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #bcaaa4;
-}
-
-#img {
-  padding-left: auto;
-}
-
-.brown1 {
-  background-color: brown;
-}
-
-.brown2 {
-  padding-top: 2rem;
-}
-
-.sticky-nav {
-  left: 0;
-  position: fixed;
-  top: 0;
-}
-
-.facebookActu {
-  height : 30rem;
-  width: 20rem;
-}
-
-.reseauxSoc {
-  height: 9rem;
-  border-top: 0.2rem solid #bcaaa4;
-}
-
-.titleCardRes, .titleCardResInsta {
-  font-size: 1.2rem;
-  color: #7e2034;
-}
-
-.titleCardResInsta:hover {
-  color: #bcaaa4;
-  text-decoration: none;
-}
-
-.basketEmpty {
-  color: #bcaaa4;
-}
-
-.btnEraser {
-  color: #7e2034;
-  text-decoration: none;
-  border: none;
-  background: none;
-}
-
-.btnEraser:hover {
-  color: #bcaaa4;
-}
-
-.btnPlane {
-  color: #bcaaa4;
-  text-decoration: none;
-  border: none;
-  background: none;
-}
-
-.btnPlane:hover {
-  color: #7e2034;
-}
-
-#carouselExampleIndicators {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  border-radius: 10px;
-  border-top: 0.2rem solid #bcaaa4;
-  border-bottom: 0.2rem solid #bcaaa4;
-  border-left: 0.2rem solid #bcaaa4;
-  border-right: 0.2rem solid #bcaaa4;
-}
-
-.instaBlock {
-  z-index: auto;
-  padding-top: 3.6rem;
-}
-
-#carouselExampleIndicators2 {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  border-radius: 10px;
-  border-top: 0.2rem solid #bcaaa4;
-  border-bottom: 0.2rem solid #bcaaa4;
-  border-left: 0.2rem solid #bcaaa4;
-  border-right: 0.2rem solid #bcaaa4;
-}
-
-.videoFb {
-  padding-top: 2rem;
-}
-
-.descriptionCard {
-  padding-top: 3rem;
-}
-
-.descripImg {
-  height: 24.7rem;
-}
-
-.cardBodyDescrip {
-min-height: 20rem;
-}
-
-.titleCardDesc {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  font-weight: bold;
-  font-size: 2.3rem;
-  color: #7e2034;
-}
-
-.CardDesc {
-  padding-top: 1rem;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
-  color: #bcaaa4;
-}
-
-.CardDescQte {
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-  font-size: 1rem;
-  color: #7e2034;
-}
-
-.qteCard {
-  color: #bcaaa4;
-  font-size: 1rem;
-}
-
-.footerDescrip {
-  background-color: #bcaaa4;
-}
-
-.containerFooter {
-  background-color: #bcaaa4;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.containerBackFooter {
-  background-color: #5b4b45;
-}
-
-#footerLogo {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-}
-
-button.btnFloating {
-  display: inline-block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  border: rgba(255, 255, 255, 0.55);
-  border-radius: 50%;
-  color: #f5f5f5;
-  text-align: center;
-  text-decoration: none;
-  background: #8f2d56;
-  z-index: 1;
-  left: 85%;
-  top: -45px;
-}
-
-.titleFooter {
-  color: #7e2034;
-  font-family: 'Sofia', cursive;
-  font-family: 'Lobster', cursive;
-}
-
-.containerFooter {
-  background-color: #bcaaa4;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.containerBackFooter {
-  background-color: #5b4b45;
-}
-
-#footerLogo {
-  width: 4rem;
-  height: 4rem;
-}
-
-button.buttonShop {
-  width: 4rem;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-}
-
-.badge:after {
-  content: attr(data-count);
-  position: absolute;
-  background: #f7e6f0;
-  height: 1rem;
-  width: 1rem;
-  text-align: center;
-  line-height: 1rem;
-  font-size: .9rem;
-  border-radius: 50%;
 }
