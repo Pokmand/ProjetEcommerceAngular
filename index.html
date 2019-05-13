@@ -21,12 +21,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-animate.js"></script>
+  <script src="https://code.angularjs.org/1.7.8/angular-messages.js"></script>
   <title>Sibellule Shop</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="row rowHead">
+      <div class="row rowHead text-center">
+<div class="padLogo"><img src="assets/img/logo.jpg" alt="" class="img-fluid logoTop"></div>
       <div class="col-lg-3 col-sm-3 col-3 m-0 p-0">
         <img class="img-fluid imgCollage" src="assets/img/collage6.jpg" alt="">
       </div>
@@ -46,7 +48,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
-    <a href="#"><span class="voirTout">Se Connecter / S'inscrire</span></a>
     <div class="collapse navbar-collapse mx-auto" id="navbarTogglerDemo01">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
@@ -62,9 +63,15 @@
           <a class="nav-link voirTout" href="#">Voir tout</a>
         </li>
       </ul>
-    </div>
-    <div class="basketShop">
-      <button type="button" class="buttonShop" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-shopping-basket fa-2x"></i></button>
+
+      <!-- Button trigger modal -->
+      <div class="voirTout">
+        <a class="" data-toggle="modal" data-target="#exampleModalCenter" ng-disabled="myForm.$invalid">
+          Se Connecter / S'inscrire
+        </a></div>
+      <div class="basketShop">
+        <button type="button" class="buttonShop" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-shopping-basket fa-2x"></i></button>
+      </div>
     </div>
   </nav>
   <!-- Page Layout here -->
@@ -221,7 +228,7 @@
   <footer>
     <div class="container-fluid containerFooter">
       <div class="row">
-        <div class="col-sm-4 lg-6 mx-auto">
+        <div class="col-sm-4 mx-auto">
           <h4 class="font-weight-bold titleFooter">Sibellule Shop</h4>
           <h6 class="font-weight-bold titleFooter">Horaires : </h6>
           <p class="">
@@ -229,7 +236,7 @@
             Samedi : 9H - 12H30 / 14H30-19H <br>
             Fermé le Lundi</p>
         </div>
-        <div class="col-sm-4 lg-6 mx-auto">
+        <div class="col-sm-4 mx-auto">
           <h4 class="font-weight-bold titleFooter">Produits : </h4>
           <ul>
             <li><a class="" href="#!/showCategory/Deco">Déco</a></li>
@@ -240,20 +247,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4 lg-4 mx-auto">
+        <div class="col-sm-4 mx-auto">
           <h6 class="font-weight-bold titleFooter">Coordonnées</h6>
           <p>29 Rue Alexandre Legros</br>
             76400 Fécamp</br>
             Tél : 02 35 29 37 06</p>
         </div>
-        <div class="col-sm-4 lg-4 mx-auto">
+        <div class="col-sm-4 mx-auto">
           <iframe id="map" <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.572429958728!2d0.37481741570636534!3d49.75648837938552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e06b6a1ae9db63%3A0x3be59082668fb00f!2sSibellule!5e0!3m2!1sfr!2sfr!4v1557409892510!5m2!1sfr!2sfr"
             width="150" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 lg-12 mx-auto">
+        <div class="col-12 text-center mx-auto">
           <a href="https://www.facebook.com/sibellule.fecamp/" name="facebook" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
           <a href="https://www.instagram.com/sibellule_fecamp_officiel/?hl=fr" name="instagram" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
@@ -261,23 +268,23 @@
     </div>
     <div class="container-fluid containerBackFooter">
       <div class="row pt-3 pb-3">
-        <div class="col-sm-4-lg-4 mx-auto text-center text-light">
+        <div class="col-sm-4 mx-auto text-center text-light">
           <p>© 2019 Copyright<p>
         </div>
-        <div class="col-sm-4 lg-4 mx-auto text-center">
+        <div class="col-sm-4 mx-auto text-center">
           <img src="assets/img/logo.jpg" alt="logo" id="footerLogo">
         </div>
-        <div class="col-sm-4 lg-4 mx-auto text-center">
+        <div class="col-sm-4 mx-auto text-center">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-danger text-right" data-toggle="modal" data-target="#exampleModalLong">
-            Conditions générales
+            Mentions légales
           </button>
-          <!-- Modal -->
+          <!-- Modal Mentions légales -->
           <div class="modal fade text-center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Conditions générales</h5>
+                  <h5 class="modal-title" id="exampleModalLongTitle">Mentions légales</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -312,6 +319,45 @@
     </div>
     </div>
   </footer>
+  <!-- Modal Se connecter / S'incrire -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Se connecter</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="myForm" action="index.html" method="post" novalidate="true">
+            <ul>
+              <li><label for="email">Votre Email : </label>
+                <input type="email" name="email" placeholder="olivierdupont@gmail.com" id="email" ng-model="email" required />
+                <div ng-messages="myForm.email.$error" role="alert" ng-model="email">
+                  <div class="text-danger" ng-message="required" ng-if="myForm.email.$touched">Votre email est obligatoire</div>
+                  <div class="text-warning" ng-message="email">E-mail non valide</div>
+                </div>
+              </li>
+
+              <li><label for="password">Votre Mot de Passe :</label>
+                <input type="password" name="password" value="" id="password" ng-model="password" required ng-minlength="1" ng-maxlength="25" />
+                <div ng-messages="myForm.password.$error" role="alert" ng-model="password">
+                  <div class="text-danger" ng-message="required" ng-if="myForm.password.$touched">Le mot de passe est obligatoire</div>
+                  <div class="text-warning" ng-message="minlength">Erreur mot de passe</div>
+                  <div class="text-warning" ng-message="maxlength">Vous avez dépassé la limite de caractères autorisés</div>
+              </li>
+            </ul>
+          </form>
+          <a href="">Créer un nouveau compte</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="buttonShop" data-dismiss="modal">Fermer</button>
+          <button type="button" class="buttonShop">Se connecter</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
@@ -320,6 +366,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <!-- JSmaiSON -->
   <script type="text/javascript" src="assets/scripts/main.js"></script>
+
+
 </body>
 
 

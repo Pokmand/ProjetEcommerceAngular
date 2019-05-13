@@ -11,6 +11,27 @@
     object-fit: cover;
     height: 150px;
   }
+  .logoTop{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+
+  }
+}
+
+.padLogo {
+  width: 100%;
+  position: absolute;
+  z-index: auto;
+  align-self: center;
+
+}
+
+.logoTop{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
 }
 
 .card-img-top {
@@ -60,15 +81,17 @@
 }
 
 .imgCollage, .imgCollage2 {
+  position: relative;
+  z-index: -1;
   border-bottom: 0.2rem solid white;
   border-right: 0.2rem solid white;
 }
 
-#imgLogo {
+/* #imgLogo {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-}
+} */
 
 .navbar {
   height: 4rem;
@@ -109,6 +132,8 @@
 }
 
 .buttonShop {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
   background-color: #bcaaa4;
   border: none;
 }
@@ -147,8 +172,18 @@
   background-color: #bcaaa4;
 }
 
-footer {
+.footer {
   padding-top: 2rem;
+}
+
+.modal-header {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  background-color: #bcaaa4;
+}
+.modal-body {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
 }
 
 .priceCard {

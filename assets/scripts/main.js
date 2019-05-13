@@ -1,4 +1,4 @@
-var sibellule = angular.module('sibellule', ['ngRoute']);
+var sibellule = angular.module('sibellule', ['ngMessages', 'ngRoute']);
 
 sibellule
   .config(['$routeProvider', function($routeProvider) {
