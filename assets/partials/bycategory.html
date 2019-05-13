@@ -1,13 +1,16 @@
 <div class="container" ng-controller="byCategory">
   <div class="row">
-    <div class="card-group col-12 col-md-4 cardProducts" ng-repeat="item in products | filter:productCategory">
-    <a href="#!/showProduct/{{item.id}}">
+    <div class="card-group col-12 col-md-4 cardProducts" ng-repeat="item in products | filter:{category: productCategory}:true">
       <div class="card">
-        <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" /></a>
+        <a href="#!/showProduct/{{item.id}}">
+          <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" />
+        </a>
         <div class="card-body">
           <button type="button" class="btnFloating" ng-click="addToCart(item)"><i class="fas fa-shopping-basket"></i></button>
-          <a class="descriptionProduct1" href="#!/showProduct/{{item.id}}"><h4 class="card-title colorDescription">{{item.product}}</h4>
-          <p class="card-text colorDescription2">{{item.description | limitTo : 100}}</p></a>
+          <a class="descriptionProduct1" href="#!/showProduct/{{item.id}}">
+            <h4 class="card-title colorDescription">{{item.product}}</h4>
+            <p class="card-text colorDescription2">{{item.description | limitTo : 100}}</p>
+          </a>
         </div>
         <div class="card-footer">
           <p class="card-text priceCard">{{item.price | currency:"&euro;"}}</p>
