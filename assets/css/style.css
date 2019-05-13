@@ -87,11 +87,11 @@
   border-right: 0.2rem solid white;
 }
 
-/* #imgLogo {
+#imgLogo {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-} */
+}
 
 .navbar {
   height: 4rem;
@@ -172,7 +172,7 @@
   background-color: #bcaaa4;
 }
 
-.footer {
+footer {
   padding-top: 2rem;
 }
 
@@ -193,6 +193,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.basketOk {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #bcaaa4;
+}
+
 #img {
   padding-left: auto;
 }
@@ -211,6 +217,11 @@
   top: 0;
 }
 
+.facebookActu {
+  height : 30rem;
+  width: 20rem;
+}
+
 .reseauxSoc {
   height: 9rem;
   border-top: 0.2rem solid #bcaaa4;
@@ -224,6 +235,32 @@
 .titleCardResInsta:hover {
   color: #bcaaa4;
   text-decoration: none;
+}
+
+.basketEmpty {
+  color: #bcaaa4;
+}
+
+.btnEraser {
+  color: #7e2034;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.btnEraser:hover {
+  color: #bcaaa4;
+}
+
+.btnPlane {
+  color: #bcaaa4;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+.btnPlane:hover {
+  color: #7e2034;
 }
 
 #carouselExampleIndicators {
@@ -256,15 +293,47 @@
 }
 
 .descriptionCard {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .descripImg {
-  height: 25rem;
+  height: 24.7rem;
 }
 
 .cardBodyDescrip {
-  height: 18rem;
+min-height: 20rem;
+}
+
+.titleCardDesc {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #7e2034;
+}
+
+.CardDesc {
+  padding-top: 1rem;
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: #bcaaa4;
+}
+
+.CardDescQte {
+  font-family: 'Sofia', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+  color: #7e2034;
+}
+
+.qteCard {
+  color: #bcaaa4;
+  font-size: 1rem;
+}
+
+.footerDescrip {
+  background-color: #bcaaa4;
 }
 
 .containerFooter {

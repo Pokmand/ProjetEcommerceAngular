@@ -1,6 +1,6 @@
 <div class="container" ng-controller="byCategory">
   <div class="row">
-    <div class="card-group col-12 col-md-4 cardProducts" ng-repeat="item in products | filter:productCategory">
+    <div class="card-group col-12 col-lg-4 col-md-6 cardProducts" ng-repeat="item in products | filter:productCategory">
     <a href="#!/showProduct/{{item.id}}">
       <div class="card">
         <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" /></a></div>
