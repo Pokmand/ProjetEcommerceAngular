@@ -26,6 +26,7 @@
 </head>
 
 <body>
+  <!-- Bandeau Image + logo -->
   <div class="container-fluid">
     <div class="row rowHead text-center">
       <div class="padLogo"><img src="assets/img/logo.jpg" alt="" class="img-fluid logoTop"></div>
@@ -43,7 +44,7 @@
       </div>
     </div>
   </div>
-
+<!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg" ng-controller="scrollController" id="scrollTop">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -64,7 +65,7 @@
         </li>
       </ul>
 
-      <!-- Button trigger modal -->
+      <!-- Button Modal Se connecter / S'inscrire - Voir Modal en fin de Body -->
       <div class="voirTout">
         <a class="" data-toggle="modal" data-target="#exampleModalCenter" ng-disabled="myForm.$invalid">
           Se Connecter / S'inscrire
@@ -331,7 +332,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="myForm" action="index.html" method="post" novalidate="true">
+          <form class="myForm" action="index.html" method="post">
             <ul>
               <li><label for="email">Votre Email : </label>
                 <input type="email" name="email" placeholder="olivierdupont@gmail.com" id="email" ng-model="email" required />
@@ -342,7 +343,7 @@
               </li>
 
               <li><label for="password">Votre Mot de Passe :</label>
-                <input type="password" name="password" value="" id="password" ng-model="password" required ng-minlength="1" ng-maxlength="25" />
+                <input type="password" name="password" id="password" ng-model="password" required ng-minlength="1" ng-maxlength="25" />
                 <div ng-messages="myForm.password.$error" role="alert" ng-model="password">
                   <div class="text-danger" ng-message="required" ng-if="myForm.password.$touched">Le mot de passe est obligatoire</div>
                   <div class="text-warning" ng-message="minlength">Erreur mot de passe</div>
