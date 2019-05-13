@@ -7,6 +7,23 @@
 }
 
 @media (max-width: 570px) {
+  .btnFloating {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border: rgba(255, 255, 255, 0.55);
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    background: #7e2034;
+    z-index: 1;
+    left: 75%;
+    top: -45px;
+  }
+
   div img.card-img {
     object-fit: cover;
     height: 150px;
@@ -19,8 +36,6 @@
   }
 }
 
-
-
 /*Container header*/
 /*z-index pour que le logo passe devant les 4 photos*/
 .padLogo {
@@ -30,7 +45,7 @@
   align-self: center;
 }
 
-.logoTop{
+.logoTop {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -48,9 +63,9 @@
   height: 3rem;
   border-radius: 50%;
 }
- /*fin header*/
 
- /*Navbar*/
+/*fin header*/
+/*Navbar*/
 .navbar {
   height: 4rem;
   background-color: #bcaaa4;
@@ -101,11 +116,10 @@
   position: fixed;
   top: 0;
 }
+
 /*Fin Navbar*/
-
-
 .titleRes {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 3rem;
 }
 
@@ -157,7 +171,7 @@
 }
 
 .cardBodyDescrip {
-min-height: 20rem;
+  min-height: 20rem;
 }
 
 .titleCardDesc {
@@ -187,16 +201,15 @@ min-height: 20rem;
   color: #bcaaa4;
   font-size: 1rem;
 }
+
 /*Fin card Products*/
-
-
 /*Colonne réseaux sociaux*/
 .reseauxSocCol {
   padding-top: 2rem;
 }
 
 .facebookActu {
-  height : 30rem;
+  height: 30rem;
   width: 20rem;
 }
 
@@ -240,6 +253,7 @@ min-height: 20rem;
   border-left: 0.2rem solid #bcaaa4;
   border-right: 0.2rem solid #bcaaa4;
 }
+
 /*Fin Colonne réseaux sociaux
 
 /*Footer*/
@@ -254,7 +268,7 @@ min-height: 20rem;
 }
 
 .faReseaux, .productFooter, .timetable, .address {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #f7e6f0;
   font-weight: bold;
 }
@@ -293,13 +307,11 @@ footer {
   height: 4rem;
   border-radius: 50%;
 }
+
 /*Fin Footer*/
-
-
 #img {
   padding-left: auto;
 }
-
 
 /*Panier achat*/
 .basketOk {
@@ -337,14 +349,13 @@ footer {
 .btnPlane:hover {
   color: #7e2034;
 }
-/*Fin panier achat*/
 
+/*Fin panier achat*/
 .modalInscrip {
   background-color: #bcaaa4;
-    font-family: 'Sofia', cursive;
+  font-family: 'Sofia', cursive;
   font-family: 'Lobster', cursive;
 }
-
 
 /*Bouton rond*/
 button.btnFloating {
@@ -363,8 +374,6 @@ button.btnFloating {
   left: 85%;
   top: -45px;
 }
-
-
 
 button.buttonShop {
   width: 4rem;
@@ -388,23 +397,6 @@ button.buttonShop {
 .card-img-top {
   height: 200px;
   object-fit: cover;
-}
-
-.btnFloating {
-  display: inline-block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  border: rgba(255, 255, 255, 0.55);
-  border-radius: 50%;
-  color: #f5f5f5;
-  text-align: center;
-  text-decoration: none;
-  background: #7e2034;
-  z-index: 1;
-  left: 75%;
-  top: -45px;
 }
 
 .btnRounded {
