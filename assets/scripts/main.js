@@ -59,6 +59,9 @@ sibellule
       var indexItem = $rootScope.cart.indexOf(removeItemFromCart);
 
       $rootScope.cart.splice(indexItem, 1);
+      if(!$rootScope.cart.length) {
+        $rootScope.clearBtn = false;
+      }
     };
 
     $scope.clearTheCart = function() {
@@ -68,7 +71,31 @@ sibellule
   }])
   .controller('description', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
     $scope.idProduct = $routeParams.idProduct;
+
+    $scope.addToCart = function(itemToCart) {
+      var itemFound = $rootScope.cart.find(x => x.id === itemToCart.id);
+
+      if (itemFound) {
+        var indexItem = $rootScope.cart.indexOf(itemFound);
+        $rootScope.cart[indexItem].qty++;
+      } else {
+        $rootScope.cart.push(angular.copy(itemToCart));
+
+      }
+    };
   }])
   .controller('byCategory', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope, $routeParams) {
     $scope.productCategory = $routeParams.category;
+
+    $scope.addToCart = function(itemToCart) {
+      var itemFound = $rootScope.cart.find(x => x.id === itemToCart.id);
+
+      if (itemFound) {
+        var indexItem = $rootScope.cart.indexOf(itemFound);
+        $rootScope.cart[indexItem].qty++;
+      } else {
+        $rootScope.cart.push(angular.copy(itemToCart));
+
+      }
+    };
   }]);
