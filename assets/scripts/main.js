@@ -80,7 +80,7 @@ sibellule
         $rootScope.cart[indexItem].qty++;
       } else {
         $rootScope.cart.push(angular.copy(itemToCart));
-
+        $rootScope.clearBtn = true;
       }
     };
   }])
@@ -95,7 +95,7 @@ sibellule
         $rootScope.cart[indexItem].qty++;
       } else {
         $rootScope.cart.push(angular.copy(itemToCart));
-
+        $rootScope.clearBtn = true;
       }
     };
   }]);
