@@ -27,8 +27,8 @@
 
 <body>
   <div class="container-fluid">
-      <div class="row rowHead text-center">
-<div class="padLogo"><img src="assets/img/logo.jpg" alt="" class="img-fluid logoTop"></div>
+    <div class="row rowHead text-center">
+      <div class="padLogo"><img src="assets/img/logo.jpg" alt="" class="img-fluid logoTop"></div>
       <div class="col-lg-3 col-sm-3 col-3 m-0 p-0">
         <img class="img-fluid imgCollage" src="assets/img/collage6.jpg" alt="">
       </div>
@@ -69,9 +69,10 @@
         <a class="" data-toggle="modal" data-target="#exampleModalCenter" ng-disabled="myForm.$invalid">
           Se Connecter / S'inscrire
         </a></div>
-        <div class="basketShop">
-          <button type="button" class="buttonShop" ng-class="(cart.length) ? 'badge' : ''" data-count="{{cart.length}}" data-toggle="modal" data-target=".bd-example-modal-lg" title="{{(cart.length > 1) ? 'Vous avez ' + cart.length + ' articles dans votre panier' : 'Vous avez ' + cart.length + ' article dans votre panier'}}"><i class="fas fa-shopping-basket fa-2x"></i></button>
-        </div>
+      <div class="basketShop">
+        <button type="button" class="buttonShop" ng-class="(cart.length) ? 'badge' : ''" data-count="{{cart.length}}" data-toggle="modal" data-target=".bd-example-modal-lg"
+          title="{{(cart.length > 1) ? 'Vous avez ' + cart.length + ' articles dans votre panier' : 'Vous avez ' + cart.length + ' article dans votre panier'}}"><i class="fas fa-shopping-basket fa-2x"></i></button>
+      </div>
     </div>
   </nav>
   <!-- Page Layout here -->
@@ -119,10 +120,10 @@
           </div>
         </div>
         <div class="facebookPage">
-        <p class="text-center titleRes">Suivez-nous sur nos réseaux ! <br>
-          Vous y serez informé de nos dernières actualités</p>
-        <iframe class="facebookActu"src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffr-fr.facebook.com%2Fsibellule.fecamp&tabs=timeline&width=%20290&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <p class="text-center titleRes">Suivez-nous sur nos réseaux ! <br>
+            Vous y serez informé de nos dernières actualités</p>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffr-fr.facebook.com%2Fsibellule.fecamp&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="290" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
 
 
@@ -207,7 +208,7 @@
                       <div class="col-4 col-md-3 text-center">
                         <button type="button" class="btnRounded" ng-click="removeFromCart(items)"><i class="fas fa-times"></i></button>
                       </div>
-                            <div class="col-12 col-md-3 priceCard text-center">
+                      <div class="col-12 col-md-3 priceCard text-center">
                         <span>Sous-total : {{items.price * items.qty | currency:"&euro;"}}</span>
                       </div>
                     </div>
@@ -238,7 +239,7 @@
         </div>
         <div class="col-sm-4 mx-auto">
           <h4 class="font-weight-bold titleFooter">Produits : </h4>
-          <ul>
+          <ul class="list-unstyled">
             <li><a class="" href="#!/showCategory/Deco">Déco</a></li>
             <li><a class="" href="#!/showCategory/Bijoux">Bijoux</a></li>
             <li><a class="" href="#!/showCategory/Accessoires">Accessoires</a></li>
