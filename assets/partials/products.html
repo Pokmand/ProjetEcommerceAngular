@@ -4,7 +4,7 @@
       <a href="#!/showProduct/{{item.id}}">
       <div class="card">
         <img class="img-fluid card-img-top" ng-src="{{item.link}}" alt="" /></a>
-        <div class="card-body">
+        <div class="card-body p-0">
         <button type="button" class="btnFloating" ng-click="addToCart(item)"><i class="fas fa-shopping-basket"></i></button>
           <a class="descriptionProduct1" href="#!/showProduct/{{item.id}}"><h4 class="card-title colorDescription">{{item.product}}</h4>
           <p class="card-text colorDescription2">{{item.description | limitTo : 100}}</p></a>

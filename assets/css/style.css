@@ -172,7 +172,7 @@ min-height: 20rem;
   padding-top: 1rem;
   font-family: 'Sofia', cursive;
   font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #bcaaa4;
 }
 
@@ -275,6 +275,7 @@ footer {
 
 .footerDescrip {
   height: 4rem;
+  font-size: 0.6rem;
   color: #f7e6f0;
   font-weight: bold;
   background-color: #bcaaa4;

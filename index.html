@@ -128,7 +128,7 @@
           <p class="text-center titleRes">Suivez-nous sur nos réseaux ! <br>
             Vous y serez informé de nos dernières actualités</p>
           <iframe class="mx-auto" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffr-fr.facebook.com%2Fsibellule.fecamp&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-            width="290" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            width="240" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
         <!--Fin iframe page Facebook-->
 
@@ -204,17 +204,17 @@
                   <h5 class="card-title colorDescription">{{items.product}}</h5>
                   <div class="container">
                     <div class="row">
-                      <div class="col-12 col-md-3">
+                      <div class="col-12 col-md-12">
                         <small class="text-muted">{{items.ref}}</small>
                       </div>
-                      <div class="col-8 col-md-3">
+                      <div class="col-8 col-md-8">
                         <p class="qteCard">Qté : <i class="fas fa-minus-circle" ng-click="items.qty = items.qty - 1; items.qty ? '' : removeFromCart(items)"></i><span class="pl-3 pr-3">{{items.qty}}</span><i class="fas fa-plus-circle"
                             ng-click="items.qty = items.qty + 1"></i></p>
                       </div>
-                      <div class="col-4 col-md-3 text-center">
+                      <div class="col-4 col-md-4 text-center">
                         <button type="button" class="btnRounded" ng-click="removeFromCart(items)"><i class="fas fa-times"></i></button>
                       </div>
-                      <div class="col-12 col-md-3 priceCard text-center">
+                      <div class="col-12 col-md-12 priceCard text-center">
                         <span>Sous-total : {{items.price * items.qty | currency:"&euro;"}}</span>
                       </div>
                     </div>
