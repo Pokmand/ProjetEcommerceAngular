@@ -26,7 +26,7 @@ sibellule
       $rootScope.clearBtn = false;
     }
   ])
-  .controller('scrollControler', ['$scope', '$window',
+  .controller('scrollController', ['$scope', '$window',
     function($scope, $window) {
       $scope.goToTop = function() {
         $window.scrollTo(0,428);
