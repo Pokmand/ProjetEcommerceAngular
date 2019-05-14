@@ -8,11 +8,11 @@
         <div class="card-body cardBodyDescrip">
           <h5 class="card-title titleCardDesc">{{products[idProduct].product}}</h5>
           <p class="card-text CardDesc">{{products[idProduct].description}}</p>
+          <span class="">Qté : <i class="fas fa-minus-circle" ng-click="(qty > 1) ? qty = qty - 1 : ''"></i><span class="pl-3 pr-3">{{qty}}</span><i class="fas fa-plus-circle" ng-click="qty = qty + 1"></i></span>
         </div>
         <div class="card-footer footerDescrip">
           <button type="button" class="btnFloating" ng-click="addToCart(products[idProduct])"><i class="fas fa-shopping-basket"></i>
           </button>
-          <span class="">Qté : <i class="fas fa-minus-circle" ng-click="(qty > 1) ? qty = qty - 1 : ''"></i><span class="pl-3 pr-3">{{qty}}</span><i class="fas fa-plus-circle" ng-click="qty = qty + 1"></i></span>
           <span class="card-text footerDescrip m-3">Total : {{products[idProduct].price * qty | currency:"&euro;"}}</span>
         </div>
       </div>
